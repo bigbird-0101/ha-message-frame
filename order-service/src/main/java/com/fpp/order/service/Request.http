@@ -1,0 +1,21 @@
+POST http://localhost:8083/addOrder
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=UTF-8
+
+{"content":"购买一个订单"}
+
+###
+
+GET http://localhost:8083/getOrder?orderId=76
+
+###
+
+POST http://localhost:8083/payOrder
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=UTF-8
+
+{"id":"76"}
+
+###
